@@ -7,7 +7,7 @@ class Ainr {
             generator: '',
             source: '',
             sink: '',
-            open_ainr: ''
+            open_ainr: true
         }
     };
 
@@ -17,12 +17,12 @@ class Ainr {
         return worker;
     };
 
-    createAinr(audioTrack, open_ainr) {
+    createAinr(audioTrack) {
         this.bundle.processor = new MediaStreamTrackProcessor(audioTrack);
         this.bundle.generator = new MediaStreamTrackGenerator('audio');
         this.bundle.source  = this.bundle.processor.readable;
         this.bundle.sink = this.bundle.generator.writable;
-        this.bundle.open_ainr = open_ainr;
+        // this.bundle.open_ainr = open_ainr;
         const { source, sink, open_ainr} = bundle;
         this.worker.postMessage({ source, sink, open_ainr }, [source, sink]);
     }
