@@ -1,3 +1,6 @@
+import Worker from "worker-loader!./Worker.js";
+import Worker from "./file.worker.js";
+
 class Ainr {
     constructor() {
         let worker;

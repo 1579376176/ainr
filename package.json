@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/1579376176/ainr/issues"
   },
-  "homepage": "https://github.com/1579376176/ainr#readme"
+  "homepage": "https://github.com/1579376176/ainr#readme",
+  "devDependencies": {
+    "worker-loader": "^3.0.8"
+  }
 }
