@@ -1,3 +1,4 @@
+importScripts('../wasm/ai.js')
 importScripts('../wasm/ainr.js')
 var isDeNoise = false;
 var collection = false;
