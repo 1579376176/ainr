@@ -14,7 +14,7 @@ class Ainr {
     initWorker() {
         this.worker = new Worker('./worker.js');
         console.log('worker初始化成功');
-        return worker;
+        // return worker;
     };
 
     createAinr(audioTrack) {
