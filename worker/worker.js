@@ -1,5 +1,6 @@
 // importScripts('../wasm/ai.js')
 // importScripts('../wasm/ainr.js')
+console.log('123456');
 var isDeNoise = false;
 var collection = false;
 var abortController;
