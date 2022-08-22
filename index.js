@@ -12,7 +12,7 @@ class Ainr {
     };
 
     initWorker() {
-        this.worker = new Worker('./worker.js');
+        this.worker = new Worker('./worker/worker.js');
         console.log('worker初始化成功');
         // return worker;
     };
